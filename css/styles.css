@@ -1,0 +1,31 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
+section {
+	/*border: solid 1px chocolate;*/
+	max-width: 960px;
+	margin: 8px auto;
+	text-align: center;
+	/*padding: 80px;*/
+	height: 95vh;
+}
+
+section#first-page {
+	/*background: #eee;*/
+	
+}
+
+#first-page-image > img {
+	border-radius: 36%;
+}
+
+section#second-page {
+	display: none;
+}
+
+section#third-page {
+	display: none;
+}
