@@ -25,7 +25,7 @@ $(document).ready(function() {
 		//console.log(pages);
 		var page = $('#' + pages[i]);
 		
-		$(page).find('.btn').click(function() {
+		page.find('.btn').click(function() {
 			var page = $(this).closest('section');
 			var nextPage = $(page).next();
 
