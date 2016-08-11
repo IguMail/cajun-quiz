@@ -13,19 +13,48 @@ section {
 	height: 95vh;
 }
 
-section#first-page {
+section#q-1 {
 	/*background: #eee;*/
 	
 }
 
-#first-page-image > img {
+.header-image > img {
 	border-radius: 36%;
 }
 
-section#second-page {
+section#q-2 {
 	display: none;
 }
 
-section#third-page {
+section#q-3 {
 	display: none;
+}
+
+section#q-4 {
+	display: none;
+}
+
+section#q-5 {
+	display: none;
+}
+
+.question-container {
+	/*border: solid 1px red;*/
+	border-radius: 40%;
+	width: 450px;
+	height: 400px;
+	margin: 0 auto;
+	font-size: 21px;
+}
+
+.question-container .question {
+	margin-top: 6px;
+}
+
+.answer-container {
+	display: inline-block;
+    margin-top: 26px;
+    /*the height of each line from one another*/
+    line-height: 39px;
+    /*float: left;*/
 }
