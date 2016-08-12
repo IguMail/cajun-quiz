@@ -13,8 +13,85 @@ section {
 	height: 95vh;
 }
 
-section#q-1 {
+.cover-image {
+	background-image: url(http://www.louisianafolklife.org/LT/Virtual_Books/Guide_to_State/images/fg_16_7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: solid 3px black;
+	font-family: 'Indie Flower', cursive;
+	color: #e60000;
+}
+
+.title-container > input {
+	margin-top: -5px;
+}
+
+#begin-btn {
+	z-index: 0;
+	padding: 8px 20px 8px 20px;
+	font-family: 'Cabin', sans-serif;
+	border-radius: 7%;
+	background: floralwhite;
+	color: green;
+	font-size: 20px;
+}
+
+#begin-btn:hover {
+	color: #e60000;
+	margin-top: 1px;
+}
+
+.btn:hover {
+	color: #e60000;
+	margin-top: 1px;
+
+}
+
+.btn {
+	color: green;
+	border-radius: 5%;
+}
+
+.header-container {
+	width: 500px;
+	height: 500px;
+	margin: 44px auto 0 auto;
+	/*border: solid 1px pink;*/
+
+}
+
+.header-container h1 {
+	font-size: 7em;
+	margin-top: -141px;
+}
+
+.header-container h3 {
+	font-size: 4em;
+}
+
+.header-container h2 {
+	font-size: 5em;
+	margin-top: -5px;
+}
+
+.header-container h5 {
+	font-size: 3em;
+	margin-top: -87px;
+}
+
+
+.title-container {
+	font-weight: 600;
+}
+
+.title:hover {
+	color: green;
+}
+
+
+div#q-1 {
 	/*background: #eee;*/
+	display: none;
 	
 }
 
@@ -22,11 +99,11 @@ section#q-1 {
 	border-radius: 36%;
 }
 
-section#q-2 {
+div#q-2 {
 	display: none;
 }
 
-section#q-3 {
+div#q-3 {
 	display: none;
 }
 
@@ -41,8 +118,8 @@ section#q-5 {
 .question-container {
 	/*border: solid 1px red;*/
 	border-radius: 40%;
-	width: 450px;
-	height: 400px;
+	width: 490px;
+	height: 456px;
 	margin: 0 auto;
 	font-size: 21px;
 }
@@ -57,4 +134,14 @@ section#q-5 {
     /*the height of each line from one another*/
     line-height: 39px;
     /*float: left;*/
+}
+
+.answer:hover {
+	font-size: 20px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.option {
+	cursor: pointer;
 }
