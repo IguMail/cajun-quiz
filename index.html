@@ -3,36 +3,259 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cajun Quiz</title>
+	<!--<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>-->
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower|Cabin:400,500italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css"/>
 	<link rel="stylesheet" href="css/styles.css"/>
 
 </head>
 <body>
 
-<section id="first-page">
-	<h1>First Page</h1>
-	<div id="first-page-image">
-		<img src="https://3.bp.blogspot.com/-ipRKCkxp4x8/U-0lfudalVI/AAAAAAAAAfU/WkGYOHvXlT4DW4evDcvUedHEeiYLL_-8gCPcB/s1600/clemoa-joseph-falcon-2-116a.jpg" height="400" width="400" alt="couple playing cajun music" />
+
+<section class="cover-image">
+	<div class="header-container">
+		<div class="title-container">
+			<h2 class="title">Quiz</h2>
+			<h5 class="title">de l<span class="title" style="color: white">a</span></h5>
+			<h1 class="title">Musique</h1>
+			<h1 class="title">C<span class="title" style="color: white">a</span>dienne</h1>
+			<input id="begin-btn" class="btn" type="button" value="Begin Quiz"/>
+		</div>
 	</div>
-	<form>
-		<input id="first-page-btn" class="btn" type="button" value="next page"/>
-	</form>
+	<div class="question-container" id="q-1">
+		<h1 class="title">Question #1</h1>
+		<div class="question">Which two Cajun artists are credited to have been the first to record the Cajun standard, "Allons a Lafayette"?</div>
+		<br/>
+		<div class="answer-container">
+			<input type="radio" name="option" class="option" value="0"/>
+			<span class="answer">Dennis Mcgee and Sadie Courville</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="1"/>
+			<span class="answer">Canray Fontenot and Bois Sec Ardoin</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="2"/>
+			<span class="answer">Joe Falcon and Cleoma Breaux</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="3"/>
+			<span class="answer">Dewey and Rodney Balfa</span>
+			<br/>
+		</div>
+		<div class="btn-container">
+			<input type="button" class="btn" id="q-1-btn" value="Submit Answer"/>
+		</div>
+	</div>
+
+<!--question 2-->
+
+	<div class="question-container" id="q-2">
+		<h1 class="title">Question #2</h1>
+		<span class="question">In which city is fiddler, Dennis Mcgee, buried?</span>
+		<br/>
+		<div class="answer-container">
+			<input type="radio" name="option" class="option" value="0"/>
+			<span class="answer">Mamou</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="1"/>
+			<span class="answer">Lafayette</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="2"/>
+			<span class="answer">Opelousas</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="3"/>
+			<span class="answer">Eunice</span>
+			<br/>
+		</div>
+		<div class="btn-container">
+			<input type="button" class="btn" id="q-2-btn" value="Submit Answer"/>
+		</div>
+	</div>
+
+<!--question 3-->
+
+	<div class="question-container" id="q-3">
+		<h1 class="title">Question #3</h1>
+		<span class="question">Which Cajun musician wrote the Cajun standard, "Two-step de Amede"?</span>
+		<br/>
+		<div class="answer-container">
+			<input type="radio" name="option" class="option" value="0"/>
+			<span class="answer">Marc Savoy</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="1"/>
+			<span class="answer">Wayne Toups</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="2"/>
+			<span class="answer">Steve Reily</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="3"/>
+			<span class="answer">Tom Waits</span>
+			<br/>
+		</div>
+		<div class="btn-container">
+			<input type="button" class="btn" id="q-3-btn" value="Submit Answer"/>
+		</div>
+	</div>
+
+
+	<audio id="audio" src="audio/amede.mp3">
 </section>
 
-<section id="second-page">
-	<h1>Second Page</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quos, in hic, amet sapiente quas veniam illum animi quod accusantium pariatur unde quam blanditiis excepturi quasi molestiae velit! Non, dolorum?</p>
-	<form>
-		<input id="second-page-btn" class="btn" type="button" value="next page"/>
-	</form>
+
+<!--questions-->
+
+
+<!--<section id="q-1" class="cover-image">
+	<h1>First Question</h1>
+	
+	<div class="question-container">
+		<div class="question">Question #1: Which two Cajun artists are credited for recording the very first Cajun song?</div>
+		<br/>
+		<div class="answer-container">
+			<input type="radio" name="option" class="option" value="0"/>
+			<span class="answer">Option-1</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="1"/>
+			<span class="answer">Option-2</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="2"/>
+			<span class="answer">Option-3</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="3"/>
+			<span class="answer">Option-4</span>
+			<br/>
+		</div>
+		<div class="btn-container">
+			<input type="button" class="btn" value="Submit Answer"/>
+		</div>
+	</div>
+</section>-->
+
+<!--next question (2)-->
+
+<!--<section id="q-2">
+	<h1>Second Question</h1>
+	<div id="second-question-image" class="header-image">
+		<img src="https://3.bp.blogspot.com/-ipRKCkxp4x8/U-0lfudalVI/AAAAAAAAAfU/WkGYOHvXlT4DW4evDcvUedHEeiYLL_-8gCPcB/s1600/clemoa-joseph-falcon-2-116a.jpg" height="400" width="400" alt="couple playing cajun music" />
+	</div>
+	<div class="question-container">
+		<span class="question">Question #1: Which two Cajun artists are credited for recording the very first Cajun song?</span>
+		<br/>
+		<div class="answer-container">
+			<input type="radio" name="option" class="option" value="0"/>
+			<span class="answer">Option-1</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="1"/>
+			<span class="answer">Option-2</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="2"/>
+			<span class="answer">Option-3</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="3"/>
+			<span class="answer">Option-4</span>
+			<br/>
+		</div>
+		<div class="btn-container">
+			<input type="button" class="btn" value="Submit Answer"/>
+		</div>
+	</div>
+</section>-->
+
+
+<!--Next question (3)-->
+
+<!--<section id="q-3">
+	<h1>Third Question</h1>
+	<div id="third-question-image" class="header-image">
+		<img src="https://3.bp.blogspot.com/-ipRKCkxp4x8/U-0lfudalVI/AAAAAAAAAfU/WkGYOHvXlT4DW4evDcvUedHEeiYLL_-8gCPcB/s1600/clemoa-joseph-falcon-2-116a.jpg" height="400" width="400" alt="couple playing cajun music" />
+	</div>
+	<div class="question-container">
+		<span class="question">Question #1: Which two Cajun artists are credited for recording the very first Cajun song?</span>
+		<br/>
+		<div class="answer-container">
+			<input type="radio" name="option" class="option" value="0"/>
+			<span class="answer">Option-1</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="1"/>
+			<span class="answer">Option-2</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="2"/>
+			<span class="answer">Option-3</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="3"/>
+			<span class="answer">Option-4</span>
+			<br/>
+		</div>
+		<div class="btn-container">
+			<input type="button" class="btn" value="Submit Answer"/>
+		</div>
+	</div>
+</section>-->
+
+
+<!--next question (4)-->
+
+
+
+<section id="q-4">
+	<h1>Fourth Question</h1>
+	<div id="fourth-question-image" class="header-image">
+		<img src="https://3.bp.blogspot.com/-ipRKCkxp4x8/U-0lfudalVI/AAAAAAAAAfU/WkGYOHvXlT4DW4evDcvUedHEeiYLL_-8gCPcB/s1600/clemoa-joseph-falcon-2-116a.jpg" height="400" width="400" alt="couple playing cajun music" />
+	</div>
+	<div class="question-container">
+		<span class="question">Question #1: Which two Cajun artists are credited for recording the very first Cajun song?</span>
+		<br/>
+		<div class="answer-container">
+			<input type="radio" name="option" class="option" value="0"/>
+			<span class="answer">Option-1</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="1"/>
+			<span class="answer">Option-2</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="2"/>
+			<span class="answer">Option-3</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="3"/>
+			<span class="answer">Option-4</span>
+			<br/>
+		</div>
+		<div class="btn-container">
+			<input type="button" class="btn" value="Submit Answer"/>
+		</div>
+	</div>
 </section>
-<section id="third-page">
-	<h1>Third Page</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quos, in hic, amet sapiente quas veniam illum animi quod accusantium pariatur unde quam blanditiis excepturi quasi molestiae velit! Non, dolorum?</p>
-	<form>
-		<input id="third-page-btn" class="btn" type="button" value="next page"/>
-	</form>
+
+<!--next question (5)-->
+
+
+	<section id="q-5">
+	<h1>Fifth Question</h1>
+	<div id="fifth-question-image" class="header-image">
+		<img src="https://3.bp.blogspot.com/-ipRKCkxp4x8/U-0lfudalVI/AAAAAAAAAfU/WkGYOHvXlT4DW4evDcvUedHEeiYLL_-8gCPcB/s1600/clemoa-joseph-falcon-2-116a.jpg" height="400" width="400" alt="couple playing cajun music" />
+	</div>
+	<div class="question-container">
+		<span class="question">Question #1: Which two Cajun artists are credited for recording the very first Cajun song?</span>
+		<br/>
+		<div class="answer-container">
+			<input type="radio" name="option" class="option" value="0"/>
+			<span class="answer">Option-1</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="1"/>
+			<span class="answer">Option-2</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="2"/>
+			<span class="answer">Option-3</span>
+			<br/>
+			<input type="radio" name="option" class="option" value="3"/>
+			<span class="answer">Option-4</span>
+			<br/>
+		</div>
+		<div class="btn-container">
+			<input type="button" class="btn" value="Submit Answer"/>
+		</div>
+	</div>
 </section>
+
+
+<!--end of questions-->
 
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
