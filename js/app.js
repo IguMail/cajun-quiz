@@ -59,8 +59,9 @@ $(document).ready(function() {
 		$('#q-1').fadeIn(1000);
 	})
 	$('#q-1-btn').click(function() {
-		$('#q-1').fadeOut(1000);
-		$('#q-2').fadeIn(1000);
+		$('#q-1').fadeOut(1000, function() {
+			$('#q-2').fadeIn(1000); // runs after fadeOut completes
+		});
 	})
 	$('#q-2-btn').click(function() {
 		$('#q-2').fadeOut(1000);
